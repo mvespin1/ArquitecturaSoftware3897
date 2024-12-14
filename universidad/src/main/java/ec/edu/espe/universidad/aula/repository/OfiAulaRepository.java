@@ -7,5 +7,6 @@ import ec.edu.espe.universidad.aula.model.OfiAulaPK;
 
 public interface OfiAulaRepository extends JpaRepository<OfiAula, OfiAulaPK> {
 
-    
+    Integer getCapacidadTotal(String codigoSede, String codigoEdificio);
+
 }

@@ -13,6 +13,7 @@ public class OfiAula implements Serializable {
 
     @EmbeddedId
     private OfiAulaPK pk;
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "COD_TIPO_AULA", nullable = false, referencedColumnName = "COD_TIPO_AULA", insertable = false, updatable = false)
     private OfiTipoAula tipoAula;
